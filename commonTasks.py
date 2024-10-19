@@ -7,7 +7,13 @@ import os
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from gspread_formatting import *
-import RPi.GPIO as GPIO
+
+if os.uname()[4].startswith('arm'):
+    import RPi.GPIO as GPIO
+    # Raspberry Pi specific code
+else:
+    print("Not running on a Raspberry Pi, skipping GPIO setup.")
+    # Mock or skip GPIO code
 
 # Find config file
 dir = os.path.dirname(__file__)  # os.getcwd()

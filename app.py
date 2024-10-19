@@ -32,10 +32,10 @@ hopperTime = str(configParser.get('feederConfig', 'Hopper_Spin_Time'))
 DB = str(configParser.get('feederConfig', 'Database_Location'))
 latestXNumberFeedTimesValue = str(configParser.get('feederConfig', 'Number_Feed_Times_To_Display'))
 upcomingXNumberFeedTimesValue = str(configParser.get('feederConfig', 'Number_Scheduled_Feed_Times_To_Display'))
-motionVideoDirPath = str(configParser.get('feederConfig', 'Motion_Video_Dir_Path'))
-latestXNumberVideoFeedTimesValue = str(configParser.get('feederConfig', 'Number_Videos_To_Display'))
-motionCameraSiteAddress = str(configParser.get('feederConfig', 'Motion_Camera_Site_Address'))
-nowMinusXDays = str(configParser.get('feederConfig', 'Number_Days_Of_Videos_To_Keep'))
+# motionVideoDirPath = str(configParser.get('feederConfig', 'Motion_Video_Dir_Path'))
+# latestXNumberVideoFeedTimesValue = str(configParser.get('feederConfig', 'Number_Videos_To_Display'))
+# motionCameraSiteAddress = str(configParser.get('feederConfig', 'Motion_Camera_Site_Address'))
+# nowMinusXDays = str(configParser.get('feederConfig', 'Number_Days_Of_Videos_To_Keep'))
 
 
 #####################################################################################
@@ -70,29 +70,29 @@ def home_page():
             finalUpcomingFeedTimeList.append(finalString)
 
         # latestXVideoFeedTimes
-        latestXVideoFeedTimes = []
-        for path, subdirs, files in os.walk(motionVideoDirPath):
-            for name in sorted(files, key=lambda name:
-            os.path.getmtime(os.path.join(path, name))):
-                if name.endswith('.mkv'):
-                    vidDisplayDate = datetime.datetime.fromtimestamp(
-                        os.path.getmtime(os.path.join(path, name))).strftime('%m-%d-%y %I:%M %p')
-                    vidFileName = name
-                    vidFileSize = str(round(os.path.getsize(os.path.join(path, name)) / (1024 * 1024.0), 1))
-                    latestXVideoFeedTimes.append([vidDisplayDate, vidFileName, vidFileSize])
+        # latestXVideoFeedTimes = []
+       # for path, subdirs, files in os.walk(motionVideoDirPath):
+       #     for name in sorted(files, key=lambda name:
+        #    os.path.getmtime(os.path.join(path, name))):
+         #       if name.endswith('.mkv'):
+          #          vidDisplayDate = datetime.datetime.fromtimestamp(
+           #             os.path.getmtime(os.path.join(path, name))).strftime('%m-%d-%y %I:%M %p')
+            #        vidFileName = name
+             #       vidFileSize = str(round(os.path.getsize(os.path.join(path, name)) / (1024 * 1024.0), 1))
+              #      latestXVideoFeedTimes.append([vidDisplayDate, vidFileName, vidFileSize])
 
-        latestXVideoFeedTimes = latestXVideoFeedTimes[::-1]  # Reverse so newest first
-        latestXVideoFeedTimes = latestXVideoFeedTimes[:int(latestXNumberVideoFeedTimesValue)]
+       # latestXVideoFeedTimes = latestXVideoFeedTimes[::-1]  # Reverse so newest first
+       # latestXVideoFeedTimes = latestXVideoFeedTimes[:int(latestXNumberVideoFeedTimesValue)]
 
         
 
-        cameraStatusOutput = DetectCamera()
+       # cameraStatusOutput = DetectCamera()
 
         # cameraStatusOutput = 'supported=0 detected=1'
-        if "detected=1" in str(cameraStatusOutput):
-            cameraStatus = '1'
-        else:
-            cameraStatus = '0'
+      #  if "detected=1" in str(cameraStatusOutput):
+    #        cameraStatus = '1'
+      #  else:
+      #      cameraStatus = '0'
 
         # Return page
         return render_template('home.html', latestXNumberFeedTimes=finalFeedTimeList
@@ -230,32 +230,32 @@ def deleteUpcomingFeedingTime(dateToDate):
         return e
 
 
-@app.route('/video/<videoid>', methods=['GET', 'POST'])
-def video_page(videoid):
-    try:
-        valid = 0
+#@app.route('/video/<videoid>', methods=['GET', 'POST'])
+#def video_page(videoid):
+#    try:
+#        valid = 0#
 
-        for f in os.listdir(motionVideoDirPath):
-            if f == videoid:
-                valid = 1
+#        for f in os.listdir(motionVideoDirPath):
+#            if f == videoid:
+#                valid = 1
+#
+#        if valid == 1:
+#            return render_template('video.html', videoid=videoid)
+#        else:
+#            abort(404)
+#    except Exception as e:
+#        return render_template('error.html', resultsSET=e)
 
-        if valid == 1:
-            return render_template('video.html', videoid=videoid)
-        else:
-            abort(404)
-    except Exception as e:
-        return render_template('error.html', resultsSET=e)
 
-
-def DetectCamera():
-    try:
-
-        process = subprocess.Popen(["vcgencmd", "get_camera"],
-                                   stdout=subprocess.PIPE,
-                                   stderr=subprocess.STDOUT)
-        return process.stdout.read()
-    except Exception as e:
-        return 'status=0'
+#def DetectCamera():
+#    try:
+#
+#        process = subprocess.Popen(["vcgencmd", "get_camera"],
+#                                   stdout=subprocess.PIPE,
+#                                   stderr=subprocess.STDOUT)
+#        return process.stdout.read()
+#    except Exception as e:
+#        return 'status=0'
 
 
 ######################################################################################
@@ -411,41 +411,41 @@ def clearBadLoginList():
         return render_template('error.html', resultsSET=e)
 
 
-@app.route('/startWebcamService', methods=['GET', 'POST'])
-def startWebcamService():
-    try:
-        if 'userLogin' in session:
+#@app.route('/startWebcamService', methods=['GET', 'POST'])
+#def startWebcamService():
+#    try:
+#        if 'userLogin' in session:#
+#
+#            process = subprocess.Popen(["sudo", "motion", "-c", "/home/pi/.motion/motion.conf"],
+#                                       stdout=subprocess.PIPE,
+#                                       stderr=subprocess.STDOUT)
+#
+#            startWebcamServiceFullOutput = ControlService('motion', 'start')
+#
+#            flash('Webcam Service Started!')
+#            return redirect(url_for('admin_page'))
+#        else:
+#            return redirect(url_for('admin_login_page'))
+#    except Exception as e:
+#        return render_template('error.html', resultsSET=e)
 
-            process = subprocess.Popen(["sudo", "motion", "-c", "/home/pi/.motion/motion.conf"],
-                                       stdout=subprocess.PIPE,
-                                       stderr=subprocess.STDOUT)
 
-            startWebcamServiceFullOutput = ControlService('motion', 'start')
+#@app.route('/stopWebcamService', methods=['GET', 'POST'])
+#def stopWebcamService():
+##    try:
+ #       if 'userLogin' in session:
+#            stopWebcamServiceFullOutput = ControlService('motion', 'stop')
 
-            flash('Webcam Service Started!')
-            return redirect(url_for('admin_page'))
-        else:
-            return redirect(url_for('admin_login_page'))
-    except Exception as e:
-        return render_template('error.html', resultsSET=e)
+#            process = subprocess.Popen(["sudo", "pkill", "-f", "motion.conf"],
+#                                       stdout=subprocess.PIPE,
+#                                       stderr=subprocess.STDOUT)
 
-
-@app.route('/stopWebcamService', methods=['GET', 'POST'])
-def stopWebcamService():
-    try:
-        if 'userLogin' in session:
-            stopWebcamServiceFullOutput = ControlService('motion', 'stop')
-
-            process = subprocess.Popen(["sudo", "pkill", "-f", "motion.conf"],
-                                       stdout=subprocess.PIPE,
-                                       stderr=subprocess.STDOUT)
-
-            flash('Webcam Service Stopped!')
-            return redirect(url_for('admin_page'))
-        else:
-            return redirect(url_for('admin_login_page'))
-    except Exception as e:
-        return render_template('error.html', resultsSET=e)
+#            flash('Webcam Service Stopped!')
+#            return redirect(url_for('admin_page'))
+#        else:
+#            return redirect(url_for('admin_login_page'))
+#    except Exception as e:
+#        return render_template('error.html', resultsSET=e)
 
 
 @app.route('/startButtonService', methods=['GET', 'POST'])
@@ -678,4 +678,4 @@ app.secret_key = SECRETKEY
 # main
 if __name__ == '__main__':
     app.debug = False  # reload on code changes. show traceback
-    app.run(host='0.0.0.0', threaded=True)
+    app.run(host='0.0.0.0', port=5000)

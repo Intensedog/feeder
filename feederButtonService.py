@@ -7,10 +7,18 @@ import argparse
 import time  # this is only being used as part of the example
 import signal
 import commonTasks
-import RPi.GPIO as GPIO
+
 import datetime
 import configparser
 import os
+
+if os.uname()[4].startswith('arm'):
+    import RPi.GPIO as GPIO
+    # Raspberry Pi specific code
+else:
+    print("Not running on a Raspberry Pi, skipping GPIO setup.")
+    # Mock or skip GPIO code
+
 
 # Find config file
 dir = os.path.dirname(__file__)
