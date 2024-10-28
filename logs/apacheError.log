@@ -1,0 +1,162 @@
+
+[Mon Oct 28 16:36:13.748608 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412] [2024-10-28 16:36:13,743] ERROR in app: Exception on /login [POST]
+[Mon Oct 28 16:36:13.748698 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412] Traceback (most recent call last):
+[Mon Oct 28 16:36:13.748712 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+[Mon Oct 28 16:36:13.748722 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]     response = self.full_dispatch_request()
+[Mon Oct 28 16:36:13.748731 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:36:13.748739 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+[Mon Oct 28 16:36:13.748748 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]     rv = self.handle_user_exception(e)
+[Mon Oct 28 16:36:13.748757 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:36:13.748765 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]   File "/var/www/feeder/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+[Mon Oct 28 16:36:13.748774 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Mon Oct 28 16:36:13.748783 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]                                                 ^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:36:13.748791 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+[Mon Oct 28 16:36:13.748800 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]     rv = self.dispatch_request()
+[Mon Oct 28 16:36:13.748808 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]          ^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:36:13.748817 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+[Mon Oct 28 16:36:13.748826 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+[Mon Oct 28 16:36:13.748834 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:36:13.748843 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]   File "/var/www/feeder/feeder/app.py", line 77, in login
+[Mon Oct 28 16:36:13.748852 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]     with sqlite3.connect('feeder.db') as conn:
+[Mon Oct 28 16:36:13.748860 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:36:13.748868 2024] [wsgi:error] [pid 1052:tid 281473538126112] [remote 192.168.0.101:53412] sqlite3.OperationalError: unable to open database file
+[Mon Oct 28 16:54:33.745594 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544] /var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py:300: PinFactoryFallback: Falling back from lgpio: [Errno 2] No such file or directory: '.lgd-nfy-3'
+[Mon Oct 28 16:54:33.748100 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   warnings.warn(
+[Mon Oct 28 16:54:33.761053 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544] [2024-10-28 16:54:33,756] ERROR in app: Exception on /home [POST]
+[Mon Oct 28 16:54:33.761111 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544] Traceback (most recent call last):
+[Mon Oct 28 16:54:33.761118 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/pins/pi.py", line 411, in pin
+[Mon Oct 28 16:54:33.761123 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     pin = self.pins[info]
+[Mon Oct 28 16:54:33.761128 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]           ~~~~~~~~~^^^^^^
+[Mon Oct 28 16:54:33.761133 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544] KeyError: PinInfo(number=12, name='GPIO18', names=frozenset({'GPIO18', 18, 'J8:12', 'BOARD12', '18', 'WPI1', 'BCM18'}), pull='', row=6, col=2, interfaces=frozenset({'', 'dpi', 'pcm', 'spi', 'gpio', 'pwm'}))
+[Mon Oct 28 16:54:33.761138 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544] 
+[Mon Oct 28 16:54:33.761143 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544] During handling of the above exception, another exception occurred:
+[Mon Oct 28 16:54:33.761147 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544] 
+[Mon Oct 28 16:54:33.761152 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544] Traceback (most recent call last):
+[Mon Oct 28 16:54:33.761156 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+[Mon Oct 28 16:54:33.761161 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     response = self.full_dispatch_request()
+[Mon Oct 28 16:54:33.761166 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761171 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+[Mon Oct 28 16:54:33.761175 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     rv = self.handle_user_exception(e)
+[Mon Oct 28 16:54:33.761180 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761185 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+[Mon Oct 28 16:54:33.761190 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Mon Oct 28 16:54:33.761194 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]                                                 ^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761199 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+[Mon Oct 28 16:54:33.761204 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     rv = self.dispatch_request()
+[Mon Oct 28 16:54:33.761208 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]          ^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761213 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+[Mon Oct 28 16:54:33.761218 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+[Mon Oct 28 16:54:33.761223 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761237 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/feeder/app.py", line 100, in home
+[Mon Oct 28 16:54:33.761242 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     servo = AngularServo(servo_pin, min_angle=-90, max_angle=90)
+[Mon Oct 28 16:54:33.761247 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761251 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py", line 108, in __call__
+[Mon Oct 28 16:54:33.761256 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     self = super().__call__(*args, **kwargs)
+[Mon Oct 28 16:54:33.761261 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761265 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 1725, in __init__
+[Mon Oct 28 16:54:33.761270 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     super().__init__(pin, initial_value=initial_value,
+[Mon Oct 28 16:54:33.761275 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 1503, in __init__
+[Mon Oct 28 16:54:33.761280 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     pwm_device=PWMOutputDevice(
+[Mon Oct 28 16:54:33.761284 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]                ^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761289 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py", line 108, in __call__
+[Mon Oct 28 16:54:33.761294 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     self = super().__call__(*args, **kwargs)
+[Mon Oct 28 16:54:33.761298 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761303 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 392, in __init__
+[Mon Oct 28 16:54:33.761308 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     super().__init__(pin, active_high=active_high, initial_value=None,
+[Mon Oct 28 16:54:33.761312 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 74, in __init__
+[Mon Oct 28 16:54:33.761317 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     super().__init__(pin, pin_factory=pin_factory)
+[Mon Oct 28 16:54:33.761322 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/mixins.py", line 75, in __init__
+[Mon Oct 28 16:54:33.761327 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     super().__init__(*args, **kwargs)
+[Mon Oct 28 16:54:33.761331 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py", line 553, in __init__
+[Mon Oct 28 16:54:33.761336 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     pin = self.pin_factory.pin(pin)
+[Mon Oct 28 16:54:33.761340 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761345 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/pins/pi.py", line 413, in pin
+[Mon Oct 28 16:54:33.761358 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     pin = self.pin_class(self, info)
+[Mon Oct 28 16:54:33.761363 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:33.761367 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/pins/rpigpio.py", line 101, in __init__
+[Mon Oct 28 16:54:33.761372 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544]     GPIO.setup(self._number, GPIO.IN, self.GPIO_PULL_UPS[self._pull])
+[Mon Oct 28 16:54:33.761377 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53544] RuntimeError: Cannot determine SOC peripheral base address
+[Mon Oct 28 16:54:37.132207 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547] [2024-10-28 16:54:37,129] ERROR in app: Exception on /home [POST]
+[Mon Oct 28 16:54:37.132281 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547] Traceback (most recent call last):
+[Mon Oct 28 16:54:37.132290 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+[Mon Oct 28 16:54:37.132298 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     response = self.full_dispatch_request()
+[Mon Oct 28 16:54:37.132305 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:37.132311 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+[Mon Oct 28 16:54:37.132318 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     rv = self.handle_user_exception(e)
+[Mon Oct 28 16:54:37.132324 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:37.132331 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+[Mon Oct 28 16:54:37.132338 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Mon Oct 28 16:54:37.132344 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]                                                 ^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:37.132351 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+[Mon Oct 28 16:54:37.132358 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     rv = self.dispatch_request()
+[Mon Oct 28 16:54:37.132364 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]          ^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:37.132370 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+[Mon Oct 28 16:54:37.132377 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+[Mon Oct 28 16:54:37.132384 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:37.132390 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/feeder/app.py", line 100, in home
+[Mon Oct 28 16:54:37.132419 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     servo = AngularServo(servo_pin, min_angle=-90, max_angle=90)
+[Mon Oct 28 16:54:37.132426 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:37.132432 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py", line 108, in __call__
+[Mon Oct 28 16:54:37.132439 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     self = super().__call__(*args, **kwargs)
+[Mon Oct 28 16:54:37.132445 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:37.132452 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 1725, in __init__
+[Mon Oct 28 16:54:37.132459 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     super().__init__(pin, initial_value=initial_value,
+[Mon Oct 28 16:54:37.132465 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 1503, in __init__
+[Mon Oct 28 16:54:37.132472 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     pwm_device=PWMOutputDevice(
+[Mon Oct 28 16:54:37.132478 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]                ^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:37.132484 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py", line 108, in __call__
+[Mon Oct 28 16:54:37.132491 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     self = super().__call__(*args, **kwargs)
+[Mon Oct 28 16:54:37.132497 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:37.132504 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 392, in __init__
+[Mon Oct 28 16:54:37.132511 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     super().__init__(pin, active_high=active_high, initial_value=None,
+[Mon Oct 28 16:54:37.132517 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 74, in __init__
+[Mon Oct 28 16:54:37.132524 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     super().__init__(pin, pin_factory=pin_factory)
+[Mon Oct 28 16:54:37.132530 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/mixins.py", line 75, in __init__
+[Mon Oct 28 16:54:37.132537 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     super().__init__(*args, **kwargs)
+[Mon Oct 28 16:54:37.132543 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py", line 552, in __init__
+[Mon Oct 28 16:54:37.132550 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     self.pin_factory.reserve_pins(self, pin)
+[Mon Oct 28 16:54:37.132556 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/pins/__init__.py", line 88, in reserve_pins
+[Mon Oct 28 16:54:37.132563 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547]     raise GPIOPinInUse(
+[Mon Oct 28 16:54:37.132580 2024] [wsgi:error] [pid 1049:tid 281473003352352] [remote 192.168.0.101:53547] gpiozero.exc.GPIOPinInUse: pin GPIO18 is already in use by <gpiozero.PWMOutputDevice object closed>
+[Mon Oct 28 16:54:47.907314 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551] [2024-10-28 16:54:47,905] ERROR in app: Exception on /home [POST]
+[Mon Oct 28 16:54:47.907380 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551] Traceback (most recent call last):
+[Mon Oct 28 16:54:47.907392 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+[Mon Oct 28 16:54:47.907402 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     response = self.full_dispatch_request()
+[Mon Oct 28 16:54:47.907410 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:47.907419 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+[Mon Oct 28 16:54:47.907428 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     rv = self.handle_user_exception(e)
+[Mon Oct 28 16:54:47.907436 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:47.907445 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+[Mon Oct 28 16:54:47.907454 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Mon Oct 28 16:54:47.907462 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]                                                 ^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:47.907471 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+[Mon Oct 28 16:54:47.907480 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     rv = self.dispatch_request()
+[Mon Oct 28 16:54:47.907488 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]          ^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:47.907497 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+[Mon Oct 28 16:54:47.907505 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+[Mon Oct 28 16:54:47.907514 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:47.907523 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/feeder/app.py", line 100, in home
+[Mon Oct 28 16:54:47.907532 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     servo = AngularServo(servo_pin, min_angle=-90, max_angle=90)
+[Mon Oct 28 16:54:47.907540 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:47.907549 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py", line 108, in __call__
+[Mon Oct 28 16:54:47.907558 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     self = super().__call__(*args, **kwargs)
+[Mon Oct 28 16:54:47.907566 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:47.907603 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 1725, in __init__
+[Mon Oct 28 16:54:47.907611 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     super().__init__(pin, initial_value=initial_value,
+[Mon Oct 28 16:54:47.907617 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 1503, in __init__
+[Mon Oct 28 16:54:47.907624 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     pwm_device=PWMOutputDevice(
+[Mon Oct 28 16:54:47.907630 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]                ^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:47.907637 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py", line 108, in __call__
+[Mon Oct 28 16:54:47.907643 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     self = super().__call__(*args, **kwargs)
+[Mon Oct 28 16:54:47.907650 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Mon Oct 28 16:54:47.907656 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 392, in __init__
+[Mon Oct 28 16:54:47.907663 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     super().__init__(pin, active_high=active_high, initial_value=None,
+[Mon Oct 28 16:54:47.907670 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/output_devices.py", line 74, in __init__
+[Mon Oct 28 16:54:47.907676 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     super().__init__(pin, pin_factory=pin_factory)
+[Mon Oct 28 16:54:47.907683 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/mixins.py", line 75, in __init__
+[Mon Oct 28 16:54:47.907689 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     super().__init__(*args, **kwargs)
+[Mon Oct 28 16:54:47.907696 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/devices.py", line 552, in __init__
+[Mon Oct 28 16:54:47.907702 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     self.pin_factory.reserve_pins(self, pin)
+[Mon Oct 28 16:54:47.907709 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]   File "/var/www/feeder/lib/python3.12/site-packages/gpiozero/pins/__init__.py", line 88, in reserve_pins
+[Mon Oct 28 16:54:47.907716 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551]     raise GPIOPinInUse(
+[Mon Oct 28 16:54:47.907722 2024] [wsgi:error] [pid 1049:tid 281473034809632] [remote 192.168.0.101:53551] gpiozero.exc.GPIOPinInUse: pin GPIO18 is already in use by <gpiozero.PWMOutputDevice object closed>

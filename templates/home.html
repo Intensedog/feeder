@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LivesTech</title>
+</head>
+<body>
+    <h1>Chicken Feeder Control</h1>
+    <button onclick="feedNow()">Feed Now</button>
+
+    <script>
+        function feedNow() {
+            fetch('/home', {
+                method: 'POST'
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("Feeder activated successfully!");
+                } else {
+                    alert("Failed to activate the feeder.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("An error occurred while activating the feeder.");
+            });
+        }
+    </script>
+</body>
+</html>

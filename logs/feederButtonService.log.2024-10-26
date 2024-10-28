@@ -1,0 +1,250 @@
+2024-10-26 00:32:01,456 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 00:32:01,459 INFO     Starting up
+2024-10-26 00:32:02,460 INFO     Welcome message return status: ok
+2024-10-26 00:32:02,463 INFO     Screen message to print: Last feed time:
+Today 12:30 AM
+2024-10-26 00:32:02,464 INFO     Message display return status: ok
+2024-10-26 00:32:02,464 INFO     Create Gracekiller class
+2024-10-26 00:32:02,464 INFO     Set up button for While Loop
+2024-10-26 00:32:02,464 ERROR    Traceback (most recent call last):
+2024-10-26 00:32:02,464 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 00:32:02,464 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 00:32:02,464 ERROR    RuntimeError
+2024-10-26 00:32:02,464 ERROR    :
+2024-10-26 00:32:02,464 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 00:32:02,465 ERROR    Exception ignored in:
+2024-10-26 00:32:02,465 ERROR    <__main__.MyLogger object at 0xffff9ea03260>
+2024-10-26 00:32:02,465 ERROR    AttributeError
+2024-10-26 00:32:02,465 ERROR    :
+2024-10-26 00:32:02,465 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 00:32:02,465 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 00:32:02,465 ERROR    :
+2024-10-26 00:32:02,465 ERROR    <built-in function unraisablehook>
+2024-10-26 00:32:02,465 ERROR    AttributeError
+2024-10-26 00:32:02,465 ERROR    :
+2024-10-26 00:32:02,465 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 00:56:35,481 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 00:56:35,483 INFO     Starting up
+2024-10-26 00:56:36,484 INFO     Welcome message return status: ok
+2024-10-26 00:56:36,492 INFO     Screen message to print: Last feed time:
+Today 12:36 AM
+2024-10-26 00:56:36,492 INFO     Message display return status: ok
+2024-10-26 00:56:36,493 INFO     Create Gracekiller class
+2024-10-26 00:56:36,493 INFO     Set up button for While Loop
+2024-10-26 00:56:36,493 ERROR    Traceback (most recent call last):
+2024-10-26 00:56:36,493 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 00:56:36,493 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 00:56:36,493 ERROR    RuntimeError
+2024-10-26 00:56:36,493 ERROR    :
+2024-10-26 00:56:36,493 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 00:56:36,494 ERROR    Exception ignored in:
+2024-10-26 00:56:36,494 ERROR    <__main__.MyLogger object at 0xffffb21dad20>
+2024-10-26 00:56:36,494 ERROR    AttributeError
+2024-10-26 00:56:36,494 ERROR    :
+2024-10-26 00:56:36,494 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 00:56:36,494 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 00:56:36,494 ERROR    :
+2024-10-26 00:56:36,494 ERROR    <built-in function unraisablehook>
+2024-10-26 00:56:36,494 ERROR    AttributeError
+2024-10-26 00:56:36,494 ERROR    :
+2024-10-26 00:56:36,494 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 00:59:11,867 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 00:59:11,868 INFO     Starting up
+2024-10-26 00:59:12,869 INFO     Welcome message return status: ok
+2024-10-26 00:59:12,872 INFO     Screen message to print: Last feed time:
+Today 12:36 AM
+2024-10-26 00:59:12,872 INFO     Message display return status: ok
+2024-10-26 00:59:12,872 INFO     Create Gracekiller class
+2024-10-26 00:59:12,872 INFO     Set up button for While Loop
+2024-10-26 00:59:12,873 ERROR    Traceback (most recent call last):
+2024-10-26 00:59:12,873 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 00:59:12,873 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 00:59:12,873 ERROR    RuntimeError
+2024-10-26 00:59:12,873 ERROR    :
+2024-10-26 00:59:12,873 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 00:59:12,873 ERROR    Exception ignored in:
+2024-10-26 00:59:12,874 ERROR    <__main__.MyLogger object at 0xffffa0ed6ea0>
+2024-10-26 00:59:12,874 ERROR    AttributeError
+2024-10-26 00:59:12,874 ERROR    :
+2024-10-26 00:59:12,874 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 00:59:12,874 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 00:59:12,874 ERROR    :
+2024-10-26 00:59:12,874 ERROR    <built-in function unraisablehook>
+2024-10-26 00:59:12,874 ERROR    AttributeError
+2024-10-26 00:59:12,874 ERROR    :
+2024-10-26 00:59:12,874 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 01:54:20,620 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 01:54:20,621 INFO     Starting up
+2024-10-26 01:54:21,621 INFO     Welcome message return status: ok
+2024-10-26 01:54:21,625 INFO     Screen message to print: Last feed time:
+Today 01:54 AM
+2024-10-26 01:54:21,625 INFO     Message display return status: ok
+2024-10-26 01:54:21,625 INFO     Create Gracekiller class
+2024-10-26 01:54:21,625 INFO     Set up button for While Loop
+2024-10-26 01:54:21,625 ERROR    Traceback (most recent call last):
+2024-10-26 01:54:21,625 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 01:54:21,626 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 01:54:21,626 ERROR    RuntimeError
+2024-10-26 01:54:21,626 ERROR    :
+2024-10-26 01:54:21,626 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 01:54:21,626 ERROR    Exception ignored in:
+2024-10-26 01:54:21,627 ERROR    <__main__.MyLogger object at 0xffff837d6e70>
+2024-10-26 01:54:21,627 ERROR    AttributeError
+2024-10-26 01:54:21,627 ERROR    :
+2024-10-26 01:54:21,627 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 01:54:21,627 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 01:54:21,627 ERROR    :
+2024-10-26 01:54:21,627 ERROR    <built-in function unraisablehook>
+2024-10-26 01:54:21,627 ERROR    AttributeError
+2024-10-26 01:54:21,627 ERROR    :
+2024-10-26 01:54:21,627 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 09:32:02,033 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 09:32:02,035 INFO     Starting up
+2024-10-26 09:32:03,038 INFO     Welcome message return status: ok
+2024-10-26 09:32:03,041 INFO     Screen message to print: Last feed time:
+Today 01:54 AM
+2024-10-26 09:32:03,041 INFO     Message display return status: ok
+2024-10-26 09:32:03,041 INFO     Create Gracekiller class
+2024-10-26 09:32:03,041 INFO     Set up button for While Loop
+2024-10-26 09:32:03,042 ERROR    Traceback (most recent call last):
+2024-10-26 09:32:03,042 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 09:32:03,042 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 09:32:03,042 ERROR    RuntimeError
+2024-10-26 09:32:03,042 ERROR    :
+2024-10-26 09:32:03,042 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 09:32:03,042 ERROR    Exception ignored in:
+2024-10-26 09:32:03,042 ERROR    <__main__.MyLogger object at 0xffffa200e750>
+2024-10-26 09:32:03,042 ERROR    AttributeError
+2024-10-26 09:32:03,042 ERROR    :
+2024-10-26 09:32:03,042 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 09:32:03,042 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 09:32:03,042 ERROR    :
+2024-10-26 09:32:03,042 ERROR    <built-in function unraisablehook>
+2024-10-26 09:32:03,042 ERROR    AttributeError
+2024-10-26 09:32:03,042 ERROR    :
+2024-10-26 09:32:03,043 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 09:37:31,814 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 09:37:31,817 INFO     Starting up
+2024-10-26 09:37:32,817 INFO     Welcome message return status: ok
+2024-10-26 09:37:32,821 INFO     Screen message to print: Last feed time:
+Today 01:54 AM
+2024-10-26 09:37:32,821 INFO     Message display return status: ok
+2024-10-26 09:37:32,821 INFO     Create Gracekiller class
+2024-10-26 09:37:32,821 INFO     Set up button for While Loop
+2024-10-26 09:37:32,821 ERROR    Traceback (most recent call last):
+2024-10-26 09:37:32,821 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 09:37:32,822 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 09:37:32,822 ERROR    RuntimeError
+2024-10-26 09:37:32,822 ERROR    :
+2024-10-26 09:37:32,822 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 09:37:32,822 ERROR    Exception ignored in:
+2024-10-26 09:37:32,822 ERROR    <__main__.MyLogger object at 0xffffbb9a70b0>
+2024-10-26 09:37:32,822 ERROR    AttributeError
+2024-10-26 09:37:32,822 ERROR    :
+2024-10-26 09:37:32,822 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 09:37:32,822 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 09:37:32,822 ERROR    :
+2024-10-26 09:37:32,822 ERROR    <built-in function unraisablehook>
+2024-10-26 09:37:32,822 ERROR    AttributeError
+2024-10-26 09:37:32,822 ERROR    :
+2024-10-26 09:37:32,822 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 13:40:30,814 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 13:40:30,815 INFO     Starting up
+2024-10-26 13:40:31,816 INFO     Welcome message return status: ok
+2024-10-26 13:40:31,819 INFO     Screen message to print: Last feed time:
+Today 01:54 AM
+2024-10-26 13:40:31,820 INFO     Message display return status: ok
+2024-10-26 13:40:31,820 INFO     Create Gracekiller class
+2024-10-26 13:40:31,820 INFO     Set up button for While Loop
+2024-10-26 13:40:31,820 ERROR    Traceback (most recent call last):
+2024-10-26 13:40:31,820 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 13:40:31,820 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 13:40:31,820 ERROR    RuntimeError
+2024-10-26 13:40:31,821 ERROR    :
+2024-10-26 13:40:31,821 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 13:40:31,821 ERROR    Exception ignored in:
+2024-10-26 13:40:31,821 ERROR    <__main__.MyLogger object at 0xffff8cf821e0>
+2024-10-26 13:40:31,821 ERROR    AttributeError
+2024-10-26 13:40:31,821 ERROR    :
+2024-10-26 13:40:31,821 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 13:40:31,821 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 13:40:31,821 ERROR    :
+2024-10-26 13:40:31,821 ERROR    <built-in function unraisablehook>
+2024-10-26 13:40:31,821 ERROR    AttributeError
+2024-10-26 13:40:31,821 ERROR    :
+2024-10-26 13:40:31,821 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 14:01:08,968 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 14:01:08,970 INFO     Starting up
+2024-10-26 14:01:09,970 INFO     Welcome message return status: ok
+2024-10-26 14:01:09,973 INFO     Screen message to print: Last feed time:
+Today 01:54 AM
+2024-10-26 14:01:09,973 INFO     Message display return status: ok
+2024-10-26 14:01:09,973 INFO     Create Gracekiller class
+2024-10-26 14:01:09,973 INFO     Set up button for While Loop
+2024-10-26 14:01:09,973 ERROR    Traceback (most recent call last):
+2024-10-26 14:01:09,973 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 14:01:09,974 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 14:01:09,974 ERROR    RuntimeError
+2024-10-26 14:01:09,974 ERROR    :
+2024-10-26 14:01:09,974 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 14:01:09,974 ERROR    Exception ignored in:
+2024-10-26 14:01:09,974 ERROR    <__main__.MyLogger object at 0xffff99d82c90>
+2024-10-26 14:01:09,974 ERROR    AttributeError
+2024-10-26 14:01:09,974 ERROR    :
+2024-10-26 14:01:09,974 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 14:01:09,974 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 14:01:09,974 ERROR    :
+2024-10-26 14:01:09,974 ERROR    <built-in function unraisablehook>
+2024-10-26 14:01:09,974 ERROR    AttributeError
+2024-10-26 14:01:09,974 ERROR    :
+2024-10-26 14:01:09,975 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 23:39:13,517 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 23:39:13,519 INFO     Starting up
+2024-10-26 23:39:14,520 INFO     Welcome message return status: ok
+2024-10-26 23:39:14,523 INFO     Screen message to print: Last feed time:
+Today 01:54 AM
+2024-10-26 23:39:14,523 INFO     Message display return status: ok
+2024-10-26 23:39:14,523 INFO     Create Gracekiller class
+2024-10-26 23:39:14,523 INFO     Set up button for While Loop
+2024-10-26 23:39:14,523 ERROR    Traceback (most recent call last):
+2024-10-26 23:39:14,523 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 23:39:14,523 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 23:39:14,524 ERROR    RuntimeError
+2024-10-26 23:39:14,524 ERROR    :
+2024-10-26 23:39:14,524 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 23:39:14,524 ERROR    Exception ignored in:
+2024-10-26 23:39:14,524 ERROR    <__main__.MyLogger object at 0xffffaf64af00>
+2024-10-26 23:39:14,524 ERROR    AttributeError
+2024-10-26 23:39:14,524 ERROR    :
+2024-10-26 23:39:14,524 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 23:39:14,524 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 23:39:14,524 ERROR    :
+2024-10-26 23:39:14,524 ERROR    <built-in function unraisablehook>
+2024-10-26 23:39:14,524 ERROR    AttributeError
+2024-10-26 23:39:14,524 ERROR    :
+2024-10-26 23:39:14,524 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 23:59:30,542 INFO     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-10-26 23:59:30,544 INFO     Starting up
+2024-10-26 23:59:31,545 INFO     Welcome message return status: ok
+2024-10-26 23:59:31,549 INFO     Screen message to print: Last feed time:
+Today 01:54 AM
+2024-10-26 23:59:31,549 INFO     Message display return status: ok
+2024-10-26 23:59:31,549 INFO     Create Gracekiller class
+2024-10-26 23:59:31,549 INFO     Set up button for While Loop
+2024-10-26 23:59:31,550 ERROR    Traceback (most recent call last):
+2024-10-26 23:59:31,550 ERROR      File "/var/www/feeder/feeder/feederButtonService.py", line 102, in <module>
+2024-10-26 23:59:31,550 ERROR    GPIO.setup(feedButton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+2024-10-26 23:59:31,550 ERROR    RuntimeError
+2024-10-26 23:59:31,550 ERROR    :
+2024-10-26 23:59:31,550 ERROR    Cannot determine SOC peripheral base address
+2024-10-26 23:59:31,551 ERROR    Exception ignored in:
+2024-10-26 23:59:31,551 ERROR    <__main__.MyLogger object at 0xffff9ad33140>
+2024-10-26 23:59:31,551 ERROR    AttributeError
+2024-10-26 23:59:31,551 ERROR    :
+2024-10-26 23:59:31,551 ERROR    'MyLogger' object has no attribute 'flush'
+2024-10-26 23:59:31,551 ERROR    Exception ignored in sys.unraisablehook
+2024-10-26 23:59:31,551 ERROR    :
+2024-10-26 23:59:31,551 ERROR    <built-in function unraisablehook>
+2024-10-26 23:59:31,551 ERROR    AttributeError
+2024-10-26 23:59:31,551 ERROR    :
+2024-10-26 23:59:31,551 ERROR    'MyLogger' object has no attribute 'flush'
